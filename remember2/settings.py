@@ -27,9 +27,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'DEVELOPMENT_ONLY')
 # DEBUG = ('DYNO' not in os.environ)
 DEBUG = True
 
-print(os.environ)
 ALLOWED_HOSTS = [
-    'remembering-python2.herokuapp.com',
+    os.getenv('HOSTNAME', ''),
 ]
 
 
