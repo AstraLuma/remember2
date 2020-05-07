@@ -19,10 +19,10 @@
       </section>
 
       <section id="elders">
-        {% for _ in elders %}
+        {% for name in elders %}
         <div class="submission-head">
           <img src='{% static "filler/profile.jpg" %}'>
-          <h3>Alice</h3>
+          <h3>{{name}}</h3>
           <p>{% lorem 1 %}</p>
         </div>
         {% endfor %}
@@ -37,7 +37,7 @@
         <button id="submission-prev">🢐</button>
         <div class="submission-full">
           <img src='{% static "filler/profile.jpg" %}'>
-          <h3>Alice</h3>
+          <h3>Dan</h3>
           <p>{% lorem 1 %}</p>
         </div>
         <button id="submission-next">🢒</button>
