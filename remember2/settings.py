@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'DEVELOPMENT_ONLY')
 DEBUG = ('DYNO' not in os.environ)
 
 ALLOWED_HOSTS = [
-    os.getenv('HOSTNAME', ''),
+    os.getenv('HOSTNAME', 'localhost'),
 ]
 
 
