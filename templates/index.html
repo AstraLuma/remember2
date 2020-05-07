@@ -12,20 +12,43 @@
       <h1>Remembering Python 2</h1>
       <img src='{% static "snake.png" %}'>
     </header>
+
     <main>
       <section id="intro">
         <p>something something python 2 nineteen years something impact something</p>
       </section>
+
       <section id="elders">
         {% for _ in elders %}
-        <div class="submission-short">
+        <div class="submission-head">
           <img src='{% static "filler/profile.jpg" %}'>
           <h3>Alice</h3>
           <p>{% lorem 1 %}</p>
         </div>
         {% endfor %}
       </section>
+
+      <section id="donate">
+        <button>Donate</button>
+        <p>If you have benefited from Python, please consider a small donation to the PSF</p>
+      </section>
+
+      <section id="submissions">
+        <button id="submission-prev">🢐</button>
+        <div class="submission-full">
+          <img src='{% static "filler/profile.jpg" %}'>
+          <h3>Alice</h3>
+          <p>{% lorem 1 %}</p>
+        </div>
+        <button id="submission-next">🢒</button>
+        <button id="submission-add">Add your own</button>
+      </section>
+
+      <section id="sponsors">
+        <p>We would like to thank the following sponsors</p>
+      </section>
     </main>
+
     <footer>
       <p>Created by Jamie Bliss</p>
     </footer>
