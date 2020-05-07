@@ -2,9 +2,34 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+body > * {
+    padding: 1rem;
+}
+
+body > * > * {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
     font-family: 'Crimson Text', serif;
+}
+
+header {
+    text-align: center;
+    background: #87CEEB; /* Wikipedia Sky Blue */
+}
+
+main {
+    background: #2cb037; /* https://rgb.to/color/8632/green-grass-green */
+}
+
+footer {
+    background: #573B0C; /* https://www.colourlovers.com/color/573B0C/Dirt_Brown */
+    color: white;
     text-align: center;
 }
