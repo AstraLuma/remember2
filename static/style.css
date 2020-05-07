@@ -33,3 +33,22 @@ footer {
     color: white;
     text-align: center;
 }
+
+#elders {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.submission-short > img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+}
+
+.submission-short > h3 {
+}
+
+.submission-short > p {
+    text-align: left;
+}
