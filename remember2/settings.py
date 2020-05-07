@@ -24,8 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('SECRET_KEY', 'DEVELOPMENT_ONLY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = ('DYNO' not in os.environ)
-DEBUG = True
+DEBUG = ('DYNO' not in os.environ)
 
 ALLOWED_HOSTS = [
     os.getenv('HOSTNAME', ''),
